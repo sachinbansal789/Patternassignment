@@ -34,3 +34,14 @@ then
 else
 	echo "email is not valid";
 fi
+
+# UseCase 4 => check Mobile number
+
+read -p "enter mobile number:" number
+pattern='^((\+){1}91){1}[7-9]{1}[0-9]{9}$'
+if [[ $number =~ $pattern ]]
+then
+	echo "number is valid";
+else
+	echo "number is invalid";
+fi
