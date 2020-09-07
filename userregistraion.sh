@@ -45,3 +45,15 @@ then
 else
 	echo "number is invalid";
 fi
+
+# UseCase 5 => Password Rule1
+
+read -p "enter password minimum 8 characters:" pass
+pat="^[a-zA-Z]{8}"
+
+if [[ $pass =~ $pat ]]
+then
+	echo "password is valid";
+else
+	echo "password is invalid";
+fi
